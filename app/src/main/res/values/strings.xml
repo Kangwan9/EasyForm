@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">Easy Form</string>
     <string name="form">แบบสอบถาม</string>
+    <string name="title">ยังไม่ได้เลือกจังหวัด</string>
+    <string name="massage">โปรดเลือกจังหวัด</string>
 </resources>
