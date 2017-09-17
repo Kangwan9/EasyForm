@@ -1,34 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding">
 
     <TextView
-        android:textColor="@color/colorPrimaryDark"
-        android:textStyle="bold"
-        android:textSize="@dimen/h1"
-        android:text="@string/form"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="@string/form"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/h1"
+        android:textStyle="bold" />
 
     <!--Name-->
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
-    <!--icon-->
-    <ImageView
 
+        <!--Icon-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_name" />
+
+        <!--Name-->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="@dimen/padding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender :"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/h2"
+        android:textStyle="bold" />
+
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Male"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
+        <RadioButton
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
-    <!--Name-->
 
-        />
+    </RadioGroup>
 
+    <TextView
+        android:layout_marginTop="@dimen/padding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Province :"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/h2"
+        android:textStyle="bold" />
 
-    />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:text="Add Data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ListView¡
+        android:id="@+id/LivName"
+        android:layout_marginTop="@dimen/padding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
 </LinearLayout>
